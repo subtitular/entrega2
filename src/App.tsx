@@ -1,25 +1,39 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Customer from './components/Customer';
+import { CustomerClass } from './components/CustomerClass';
+import  Employee  from './components/Employee';
+import { EmployeeClass } from './components/EmployeeClass';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="container mt-3">
+        <div className="grid">
+          <div className="row">
+            <div className="col">
+              <p className="h3 fw-bold text-success">App Component</p>
+              <p className="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellendus, quos fuga incidunt molestias maiores esse exercitationem itaque numquam aliquid quam consequatur sapiente iure consectetur nisi veritatis asperiores maxime fugiat.</p>
+              <button className="btn btn-success btn-sm">
+                <i className="fa fa-book"/> Read More</button>
+            </div>
+          </div>
+          {/*<div className="row">
+            <div className="col">
+              <Customer name={'Rajan'} age={30} title={'Engineer'}/>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <CustomerClass name={'Oscar'} age={50} title={'Software Engineer'}/>
+            </div>
+          </div>*/}
+
+      </div>
+      <EmployeeClass/>
+      </div>
+    </React.Fragment>
   );
 }
 
