@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserList from './components/UserList';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
               <CustomerClass name={'Oscar'} age={50} title={'Software Engineer'}/>
             </div>
           </div>*/}
+          <div className="row">
+            <div className="col">
+              <UserList/>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
