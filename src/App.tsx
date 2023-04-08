@@ -8,6 +8,7 @@ import { EmployeeClass } from './components/EmployeeClass';
 import Counter from './components/Counter';
 import Greetings from './components/Greetings';
 import LoginForm from './components/LoginForm';
+import UserList from './components/UserList';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
               <CustomerClass name={'Oscar'} age={50} title={'Software Engineer'}/>
             </div>
           </div>*/}
-          <LoginForm/>
+          <UserList/>
         </div>
       </div>
     </React.Fragment>

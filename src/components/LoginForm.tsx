@@ -11,8 +11,12 @@ let LoginForm:React.FC<IProps>=()=>{
 
     let[state,setState]=useState<IState>({
         user:{
+            sno:'',
             username:'',
-            password:''
+            password:'',
+            designation:'',
+            age:0,
+            company:''
         }
     });
 
