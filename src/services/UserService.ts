@@ -34,6 +34,14 @@ export class UserService{
             password:'',
             designation:'Casual Boys',
             company	:'Somebodies'
+        },
+        {
+            sno:'PEN002',
+            username:'Santiago Peña',
+            age:21,
+            password:'',
+            designation:'Real Boys',
+            company	:'The ones'
         }
     ];
 
