@@ -8,13 +8,17 @@ import reportWebVitals from './reportWebVitals';
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import { Routes } from 'react-router-dom';
 
+import {BrowserRouter as Router}  from "react-router-dom";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface IProps{}
 interface IState{}
@@ -6,7 +7,11 @@ interface IState{}
 let Navbar:React.FC<IProps>=()=>{
     return (
         <React.Fragment>
-            <h3>Navbar</h3>
+            <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
+                <div className="container">
+                    <Link to={'/'} className="navbar-brand">React Router</Link>
+                </div>
+            </nav>
         </React.Fragment>
     );
 }

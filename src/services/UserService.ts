@@ -6,4 +6,8 @@ export class UserService{
         let dataURL:string = `${this.serverURL}/users`;
         return axios.get(dataURL);
     }
+    public static getUser(userId:string){
+        let dataURL : string = `${this.serverURL}/users/${userId}`;
+        return axios.get(dataURL);
+    }
 }
