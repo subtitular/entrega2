@@ -72,7 +72,7 @@ let UserDetails:React.FC<IProps>=()=>{
       BS: {state.user.company.bs}
     </p>
     </div>
-    </div>  }
+    </div>  
   
         </React.Fragment>
     );
