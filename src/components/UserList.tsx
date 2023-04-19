@@ -40,7 +40,7 @@ let UserList:React.FC<IProps>=()=>{
             <div className="container mt-3">
                 <div className="row">
                     <div className="col">
-                        <p className="h3 fw-bold text-success">User List</p>
+                        <p className="h3 fw-bold text-success">Listado de Usuarios</p>
                         <p className="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet atque voluptas debitis vel aut saepe, asperiores ducimus odit perferendis alias quis quasi ipsa, harum similique deleniti veniam eius earum?</p>
                     </div>
                 </div>
@@ -51,11 +51,11 @@ let UserList:React.FC<IProps>=()=>{
                         <table className="table table-hover text-center table-striped">
                             <thead className="bg-success text-white">
                                 <tr>
-                                    <th>SNO</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Company</th>
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
+                                    <th>Compañia</th>
                                     <th>Website</th>
                                 </tr>
                             </thead>
