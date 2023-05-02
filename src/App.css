@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.home {
+  margin-top: 2rem;
+}
+
+
+.product {
+  margin-bottom: 2rem;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.pagination li {
+  margin-right: 1rem;
+}
+
+
+.active {
+  color: #007bff;
+}
