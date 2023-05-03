@@ -12,8 +12,10 @@ import { FaSignInAlt } from "react-icons/fa";
 
 interface Product {
   id: number;
+  albumId: number;
   title: string;
-  body: string;
+  url: string;
+  thumbnailUrl: string;
 }
 
 
@@ -22,7 +24,7 @@ const Home: React.FC = () => {
   const [pageNumber, setPageNumber] = useState(0);
 
 
-  const productsPerPage = 10;
+  const productsPerPage = 3;
   const pagesVisited = pageNumber * productsPerPage;
 
 
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get<Product[]>("https://jsonplaceholder.typicode.com/posts")
+      .get<Product[]>("https://jsonplaceholder.typicode.com/photos")
       .then((response) => {
         setProducts(response.data);
       })
@@ -49,22 +51,21 @@ const Home: React.FC = () => {
   const displayProducts = products
     .slice(pagesVisited, pagesVisited + productsPerPage)
     .map((product) => (
+      <div className="card m-3 p-6 col-3">
+        <img className="card-img-top mt-3" src={product.thumbnailUrl} alt="Card image"></img>
       <div key={product.id} className="product">
         <h2>{product.title}</h2>
-        <p>{product.body}</p>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
       </div>
     ));
 
 
   return (
     <Container className="home">
-      <h1>Home</h1>
-      <Button variant="primary">
-        <FaSignInAlt />
-        Iniciar sesión
-      </Button>
+      <h1>Tienda de productos del Poli</h1>
       <Row>
-        <Col>{displayProducts}</Col>
+        {displayProducts}
       </Row>
       <Pagination
         pageCount={pageCount}

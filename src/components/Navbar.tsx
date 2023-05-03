@@ -9,7 +9,11 @@ let Navbar:React.FC<IProps>=()=>{
         <>
             <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
                 <div className="container">
-                    <Link to={'/'} className="navbar-brand">React Router</Link>
+                <Link to={'/'} className="navbar-brand">Home</Link>
+                <Link to={'/about'} className="navbar-brand">Nosotros</Link>
+                    
+                <Link to={'/contacts/list'} className="navbar-brand">Admin</Link>
+                <Link to={'/login'} className="navbar-brand">Login</Link>
                 </div>
             </nav>
         </>

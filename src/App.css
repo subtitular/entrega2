@@ -64,3 +64,58 @@
 .active {
   color: #007bff;
 }
+
+.about {
+  margin-top: 2rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info svg {
+  margin-right: 1rem;
+}
+
+.info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.register {
+  margin-top: 2rem;
+}
+
+.register h1 {
+  margin-bottom: 1rem;
+}
+
+.register .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.register .form-label svg {
+  margin-right: 1rem;
+}
+
+.register .form-control {
+  width: 100%;
+}
+
+
+.profile {
+  margin-top: 2rem;
+}
+
+.profile h1 {
+  margin-bottom: 1rem;
+}
+
+.profile .card {
+  margin-bottom: 1.5rem;
+}
+
+.profile .list-group-item svg {
+  margin-right: 1rem;
+}
