@@ -14,17 +14,21 @@ const ProfileComponent: React.FC = () => {
             <Card.Body>
               <FaUser className="mb-3" size="5rem" />
               <Card.Title>Oscar A. Peña C.</Card.Title>
-              <Card.Text>
-                Trabajando actualmente
-              </Card.Text>
+              <Card.Text>Trabajando actualmente</Card.Text>
               <Link to="/change-password">Cambiar Contraseña</Link>
             </Card.Body>
           </Card>
           <Card>
             <ListGroup variant="flush">
-              <ListGroup.Item><FaEnvelope className="mr-2" /> subtitular@gmail.com</ListGroup.Item>
-              <ListGroup.Item><FaPhone className="mr-2" /> +1 555-555-5555</ListGroup.Item>
-              <ListGroup.Item><FaMapMarkerAlt className="mr-2" /> 123 Main St, Anytown USA</ListGroup.Item>
+              <ListGroup.Item>
+                <FaEnvelope className="mr-2" /> subtitular@gmail.com
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FaPhone className="mr-2" /> +1 555-555-5555
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FaMapMarkerAlt className="mr-2" /> 123 Main St, Anytown USA
+              </ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>

@@ -37,17 +37,13 @@
   }
 }
 
-
-
 .home {
   margin-top: 2rem;
 }
 
-
 .product {
   margin-bottom: 2rem;
 }
-
 
 .pagination {
   display: flex;
@@ -55,11 +51,9 @@
   margin-top: 2rem;
 }
 
-
 .pagination li {
   margin-right: 1rem;
 }
-
 
 .active {
   color: #007bff;
@@ -102,7 +96,6 @@
 .register .form-control {
   width: 100%;
 }
-
 
 .profile {
   margin-top: 2rem;

@@ -36,9 +36,9 @@ const ChangePasswordComponent: React.FC<Props> = () => {
                 <div className="form-group">
                   <label htmlFor="oldPassword">Contraseña actual</label>
                   <div className="input-group">
-                  <span className="input-group-text">
-                        <FaLock   size={30} />
-                      </span>
+                    <span className="input-group-text">
+                      <FaLock size={30} />
+                    </span>
                     <input
                       type="password"
                       className="form-control"
@@ -54,9 +54,9 @@ const ChangePasswordComponent: React.FC<Props> = () => {
                 <div className="form-group">
                   <label htmlFor="newPassword">Nueva Contraseña</label>
                   <div className="input-group">
-                  <span className="input-group-text">
-                        <FaLock   size={30} />
-                      </span>
+                    <span className="input-group-text">
+                      <FaLock size={30} />
+                    </span>
                     <input
                       type="password"
                       className="form-control"
@@ -74,9 +74,9 @@ const ChangePasswordComponent: React.FC<Props> = () => {
                     Confirmar Nueva Contraseña
                   </label>
                   <div className="input-group">
-                  <span className="input-group-text">
-                        <FaLock   size={30} />
-                      </span>
+                    <span className="input-group-text">
+                      <FaLock size={30} />
+                    </span>
                     <input
                       type="password"
                       className="form-control"
@@ -89,7 +89,10 @@ const ChangePasswordComponent: React.FC<Props> = () => {
                     />
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary btn-block mt-3">
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block mt-3"
+                >
                   Cambiar Contraseña
                 </button>
               </form>

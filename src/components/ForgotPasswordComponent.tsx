@@ -9,7 +9,8 @@ const ForgotPassword: React.FC = () => {
         <Col md={6}>
           <h2 className="text-center mb-4">¿Olvidó su contraseña?</h2>
           <p className="text-center mb-4">
-            Ingrese su correo electrónico para recibir un enlace para restablecer su contraseña.
+            Ingrese su correo electrónico para recibir un enlace para
+            restablecer su contraseña.
           </p>
           <Form>
             <Form.Group controlId="email">
@@ -20,7 +21,10 @@ const ForgotPassword: React.FC = () => {
                     <FaEnvelope />
                   </div>
                 </div>
-                <Form.Control type="email" placeholder="Ingrese su correo electrónico" />
+                <Form.Control
+                  type="email"
+                  placeholder="Ingrese su correo electrónico"
+                />
               </div>
             </Form.Group>
             <Button type="submit" className="mt-3">

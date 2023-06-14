@@ -16,10 +16,10 @@ const LoginComponent: React.FC<Props> = () => {
                 <div className="form-group">
                   <label htmlFor="username">Nombre de usuario</label>
                   <div className="input-group">
-                  <span className="input-group-text">
-                  <FaUser size={30} />
-                      </span>
-                  
+                    <span className="input-group-text">
+                      <FaUser size={30} />
+                    </span>
+
                     <input
                       type="text"
                       className="form-control"
@@ -33,9 +33,9 @@ const LoginComponent: React.FC<Props> = () => {
                 <div className="form-group">
                   <label htmlFor="password">Contraseña</label>
                   <div className="input-group">
-                  <span className="input-group-text">
-                        <FaLock  size={30}/>
-                      </span>
+                    <span className="input-group-text">
+                      <FaLock size={30} />
+                    </span>
                     <input
                       type="password"
                       className="form-control"
@@ -46,7 +46,10 @@ const LoginComponent: React.FC<Props> = () => {
                     />
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary btn-block mt-3">
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block mt-3"
+                >
                   Iniciar Sesión
                 </button>
               </form>
@@ -56,8 +59,7 @@ const LoginComponent: React.FC<Props> = () => {
                 </Link>
               </div>
               <div className="mt-3">
-                ¿No tienes una cuenta?{" "}
-                <Link to="/registrarse">Regístrate</Link>
+                ¿No tienes una cuenta? <Link to="/registrarse">Regístrate</Link>
               </div>
             </div>
           </div>
